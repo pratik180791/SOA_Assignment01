@@ -20,7 +20,7 @@
         <xs:element ref="JobTitle"/>
         <xs:element ref="SocialSecurityNumber"/>
         <xs:element ref="DriverLicenseNumber"/>
-        <xs:element ref="Address"/>
+        <xs:element ref="AddressLine1"/>
         <xs:element ref="BirthDate"/>
         <xs:element ref="Datehired"/>
         <xs:element ref="Salary"/>
@@ -31,31 +31,27 @@
   <xs:element name="EMPID" type="xs:string"/>
   <xs:element name="FirstName" type="xs:string"/>
   <xs:element name="LastName" type="xs:string"/>
-  <xs:element name="Email" type="xs:string">
-  </xs:element>
+  <xs:element name="Email" type="xs:string"/>
   <xs:element name="Extension" type="xs:integer"/>
   <xs:element name="HomePhone">
   <xs:simpleType>
     <xs:restriction base="xs:integer">
-      <xs:minLength value="10"/>
-      <xs:maxLength value="10"/>
+      <xs:totalDigits value="10"/>
     </xs:restriction>  
 	</xs:simpleType>
   </xs:element>
   <xs:element name="CellPhone">
   <xs:simpleType>
     <xs:restriction base="xs:integer">
-      <xs:minLength value="10"/>
-      <xs:maxLength value="10"/>
+      <xs:totalDigits value="10"/>
     </xs:restriction>
   </xs:simpleType>
   </xs:element>
   <xs:element name="JobTitle" type="xs:string"/>
-  <xs:element name="SocialSecurityNumber" type="xs:integer">
+  <xs:element name="SocialSecurityNumber">
     <xs:simpleType>
     <xs:restriction base="xs:integer">
-      <xs:minLength value="9"/>
-      <xs:maxLength value="9"/>
+      <xs:totalDigits value="9"/>
     </xs:restriction>
   </xs:simpleType>
   </xs:element>
@@ -64,17 +60,17 @@
     <xs:restriction base="xs:string">
       <xs:minLength value="14"/>
       <xs:maxLength value="14"/>
+<xs:pattern value="[A-Z][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]"/>
     </xs:restriction>
-	<xs:pattern value="[A-Z][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]"/>
   </xs:simpleType>
+  </xs:element>
   <xs:element name="AddressLine1" type="xs:string"/>
   <xs:element name="City" type="xs:string"/>
   <xs:element name="State" type="xs:string"/>
-  <xs:element name="PostalCode" type="xs:integer">
+  <xs:element name="PostalCode">
    <xs:simpleType>
     <xs:restriction base="xs:integer">
-      <xs:minLength value="6"/>
-      <xs:maxLength value="6"/>
+      <xs:totalDigits value="6"/>
     </xs:restriction>
   </xs:simpleType>
   </xs:element>

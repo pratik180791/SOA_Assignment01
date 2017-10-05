@@ -22,7 +22,7 @@
   </xs:element>
   <xs:element name="Order_ID" type="xs:string"/>
   <xs:element name="Order_Date" type="xs:date"/>
-  <xs:element name="Customer_ID" type="xs:integer"/>
+  <xs:element name="Customer_ID" type="xs:string"/>
   <xs:element name="Employee_ID" type="xs:string"/>
   <xs:element name="Truck_ID" type="xs:string"/>
   <xs:element name="PurchaseOrderNumber" type="xs:integer"/>

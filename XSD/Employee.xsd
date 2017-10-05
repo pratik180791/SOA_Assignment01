@@ -21,9 +21,6 @@
         <xs:element ref="SocialSecurityNumber"/>
         <xs:element ref="DriverLicenseNumber"/>
         <xs:element ref="Address"/>
-        <xs:element ref="City"/>
-        <xs:element ref="State"/>
-        <xs:element ref="PostalCode"/>
         <xs:element ref="BirthDate"/>
         <xs:element ref="Datehired"/>
         <xs:element ref="Salary"/>
@@ -70,7 +67,7 @@
     </xs:restriction>
 	<xs:pattern value="[A-Z][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]"/>
   </xs:simpleType>
-  <xs:element name="Address" type="xs:string"/>
+  <xs:element name="AddressLine1" type="xs:string"/>
   <xs:element name="City" type="xs:string"/>
   <xs:element name="State" type="xs:string"/>
   <xs:element name="PostalCode" type="xs:integer">

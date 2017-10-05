@@ -1,0 +1,135 @@
+create table Customers(
+Cust_ID int  PRIMARY KEY,
+Cust_Name varchar(30) NOT NULL,
+Business_Type varchar(30) NOT NULL,
+Cust_Add varchar(30) NOT NULL,
+Cust_City varchar(30) NOT NULL,
+Cust_State varchar(30) NOT NULL,
+Cust_ZipCode int NOT NULL,
+Cust_Phone_No int NOT NULL,
+Cust_Fax_No int,
+Cust_Email_Add varchar(30) NOT NULL
+);
+
+create table Locations(
+Loc_ID varchar(10) PRIMARY KEY,
+Loc_Name varchar(30) NOT NULL,
+Loc_Code int NOT NULL,
+Loc_Add varchar(30) NOT NULL,
+Loc_City varchar(30) NOT NULL, 
+Loc_State varchar(30) NOT NULL,
+Loc_ZipCode varchar(30) NOT NULL, 
+Loc_Phone_No int NOT NULL,
+Loc_Fax_No int NOT NULL,
+Loc_Email_Add varchar(30) NOT NULL
+);
+
+create table Pricings(
+Pricing_ID int Primary KEY,
+Price float NOT NULL,
+Loc_ID_To varchar(10),
+Loc_ID_From varchar(10),
+Loc_Code_To int,
+Loc_Code_From int,
+Loc_Name_To varchar(30),
+Loc_Name_From varchar (30),
+Cust_ID int,
+constraint Location_fk foreign key (Loc_ID_To, Loc_ID_From, Loc_Code_To, Loc_Code_From, Loc_Name_To, Loc_Name_From) references Locations (Loc_ID, Loc_ID, Loc_Code, Loc_Code, Loc_Name, Loc_Name)
+);
+
+create table Comments(
+Comment_ID int PRIMARY KEY,
+Time_Of_Comment timestamp,
+Comment_Detail varchar(30),
+Cust_ID int,
+constraint Cust_fk foreign key (Cust_ID) references Customers (Cust_ID)
+);
+
+create table Employees(
+Emp_ID int primary key,
+Emp_First_Name varchar(30) NOT NULL,
+Emp_Last_Name varchar(30) NOT NULL,
+Emp_Add varchar(30) NOT NULL,
+Emp_City varchar(30) NOT NULL,
+Emp_State varchar(30) NOT NULL,
+Emp_ZipCode int NOT NULL,
+Job_Title varchar(30) NOT NULL,
+Social_Security_No int NOT NULL,
+Driver_License_no varchar (30) ,
+Emp_Phone_no int NOT NULL,
+Emp_Fax_No int,
+Emp_Email_Add varchar(30) NOT NULL
+);
+
+create table Trucks(
+Truck_ID int PRIMARY KEY,
+Make_Year year (4),
+Make_Model varchar (30) NOT NULL,
+License_Plate_No int NOT NULL,
+Emp_ID int,
+Truck_Color varchar (10),
+Truck_VIN varchar(17) NOT NULL,
+constraint Emp_fk foreign key (Emp_ID) references Employees(Emp_ID)
+);
+
+create table Orders(
+Order_ID int PRIMARY KEY,
+Order_Date timestamp,
+Cust_ID int,
+Emp_ID int,
+Truck_ID int,
+Purchase_Order_No int NOT NULL,
+Order_Total_Amount int,
+constraint Cust_fk foreign key(Cust_ID) references Customers (Cust_ID),
+constraint Emp_fk foreign key(Emp_ID) references Employees (Emp_ID),
+constraint Truck_fk foreign key(Truck_ID) references Trucks (Trucks_ID)
+);
+
+create table Expenses(
+Expense_ID int PRIMARY KEY,
+Emp_ID int,
+Expense_Type varchar(30) NOT NULL,
+Purpose_Of_Expense varchar (30),
+Amount_Spend int NOT NULL,
+Expense_Description varchar(30),
+Date_Purchased timestamp,
+Date_Submitted timestamp,
+Advance_Amt int,
+Payment_Method varchar(30),
+constraint Emp_fk foreign key(Emp_ID) references Employees (Emp_ID)
+);
+
+create table Payments(
+Payment_ID int PRIMARY KEY,
+Order_ID int,
+Payement_Method varchar(30) NOT NULL,
+Payment_Amt int NOT NULL,
+Payment_Date timestamp NOT NULL,
+Credit_Card_No int NOT NULL,
+Card_Holder_Name varchar(30) NOT NULL,
+CC_Exp date NOT NULL,
+CC_CVV int NOT NULL,
+constraint Order_fk foreign key(Order_ID) references Orders (Order_ID)
+);
+
+create table Transactions(
+Transaction_ID int PRIMARY KEY,
+Order_ID int,
+Date_Of_Transaction date NOT NULL,
+Transaction_Details varchar(30),
+Transaction_Amount int NOT NULL,
+Emp_ID int,
+Truck_ID int,
+Discount int,
+Quantity int, 
+Unit_Price int,
+Driver_Price int,
+VIM varchar(17),
+Special_Rate int,
+Surcharge int,
+constraint Order_fk foreign key (Order_ID) references Orders (Order_ID),
+constraint Emp_fk foreign key(Emp_ID) references Employees (Emp_ID),
+constraint Truck_fk foreign key(Truck_ID, VIM) references Trucks (Trucks_ID, VIM)
+);
+
+

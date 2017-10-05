@@ -3,40 +3,40 @@
 	<Payment>
 		<Payment_ID>Pay01</Payment_ID>
 		<Order_ID>ORD001</Order_ID>
-		<Payment_Method_ID>2</Payment_Method_ID>
+		<Payment_Method>Credit Card</Payment_Method>
 		<Payment_Amount>560</Payment_Amount>
 		<Payment_Date>2017-08-02</Payment_Date>
 		<Card_Details>
-			<CreditCardNumber>1234567890123456</CreditCardNumber>
+			<CardNumber>1234567890123456</CardNumber>
 			<CardholdersName>Harvey</CardholdersName>
-			<CreditCardExpDate>2022-06</CreditCardExpDate>
-			<CreditCardAuthorizationNumber>001</CreditCardAuthorizationNumber>
+			<CardExpDate>2022-06</CardExpDate>
+			<CardAuthorizationNumber>001</CardAuthorizationNumber>
 		</Card_Details>
 	</Payment>
 	<Payment>
 		<Payment_ID>Pay02</Payment_ID>
 		<Order_ID>ORD002</Order_ID>
-		<Payment_Method_ID>2</Payment_Method_ID>
+		<Payment_Method>Debit Card</Payment_Method>
 		<Payment_Amount>120</Payment_Amount>
 		<Payment_Date>2017-09-11</Payment_Date>
 		<Card_Details>
-			<CreditCardNumber>3388338833883388</CreditCardNumber>
+			<CardNumber>3388338833883388</CardNumber>
 			<CardholdersName>Mike</CardholdersName>
-			<CreditCardExpDate>2024-01</CreditCardExpDate>
-			<CreditCardAuthorizationNumber>002</CreditCardAuthorizationNumber>
+			<CardExpDate>2024-01</CardExpDate>
+			<CardAuthorizationNumber>002</CardAuthorizationNumber>
 		</Card_Details>
 	</Payment>
 	<Payment>
 		<Payment_ID>Pay03</Payment_ID>
 		<Order_ID>ORD003</Order_ID>
-		<Payment_Method_ID>1</Payment_Method_ID>
+		<Payment_Method>Credit Card</Payment_Method>
 		<Payment_Amount>300</Payment_Amount>
 		<Payment_Date>2017-05-13</Payment_Date>
 		<Card_Details>
-			<CreditCardNumber>4545454545454545</CreditCardNumber>
+			<CardNumber>4545454545454545</CardNumber>
 			<CardholdersName>Robert</CardholdersName>
-			<CreditCardExpDate>2021-01</CreditCardExpDate>
-			<CreditCardAuthorizationNumber>003</CreditCardAuthorizationNumber>
+			<CardExpDate>2021-01</CardExpDate>
+			<CardAuthorizationNumber>003</CardAuthorizationNumber>
 		</Card_Details>
 	</Payment>
 </Payments>

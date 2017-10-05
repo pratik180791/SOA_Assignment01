@@ -22,7 +22,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="Employee_ID" type="xs:integer"/>
+  <xs:element name="Employee_ID" type="xs:string"/>
   <xs:element name="ExpenseType" type="xs:string"/>
   <xs:element name="PurposeofExpense" type="xs:string"/>
   <xs:element name="AmountSpent" type="xs:integer"/>

@@ -21,7 +21,7 @@
   </xs:element>
   <xs:element name="Payment_ID" type="xs:string"/>
   <xs:element name="Order_ID" type="xs:string"/>
-  <xs:element name="Payment_Method_ID" type="xs:string"/>
+  <xs:element name="Payment_Method" type="xs:string"/>
   <xs:element name="Payment_Amount" type="xs:integer"/>
   <xs:element name="Payment_Date" type="xs:date"/>
   <xs:element name="Card_Details">
@@ -31,21 +31,23 @@
         <xs:element ref="CardholdersName"/>
         <xs:element ref="CardExpDate"/>
 	<xs:element ref="CardAuthorizationNumber"/>
-</xs:element>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="CardNumber" type="xs:integer"/>
+	</xs:sequence>
+	</xs:complexType>
+	</xs:element>
+  <xs:element name="CardNumber">
+  <xs:simpleType>
 <xs:restriction base="xs:integer">
-      <xs:minLength value="16"/>
-      <xs:maxLength value="16"/>
+      <xs:totalDigits value="16"/>
     </xs:restriction>
+	</xs:simpleType>
+	</xs:element>
   <xs:element name="CardholdersName" type="xs:string"/>
   <xs:element name="CardExpDate" type="xs:gYearMonth"/>
-  <xs:element name="CreditCardAuthorizationNumber">
+  <xs:element name="CardAuthorizationNumber">
+  <xs:simpleType>
 	<xs:restriction base="xs:integer">
-      <xs:minLength value="3"/>
-      <xs:maxLength value="3"/>
+      <xs:totalDigits value="3"/>
     </xs:restriction>
+	</xs:simpleType>
 	</xs:element>
 </xs:schema>

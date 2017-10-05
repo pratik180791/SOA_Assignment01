@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Employees">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Employee"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="EMPID"/>
+        <xs:element ref="FirstName"/>
+        <xs:element ref="LastName"/>
+        <xs:element ref="Email"/>
+        <xs:element ref="Extension"/>
+        <xs:element ref="HomePhone"/>
+        <xs:element ref="CellPhone"/>
+        <xs:element ref="JobTitle"/>
+        <xs:element ref="SocialSecurityNumber"/>
+        <xs:element ref="DriverLicenseNumber"/>
+        <xs:element ref="Address"/>
+        <xs:element ref="BirthDate"/>
+        <xs:element ref="Datehired"/>
+        <xs:element ref="Salary"/>
+        <xs:element ref="Notes"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EMPID" type="xs:NCName"/>
+  <xs:element name="FirstName" type="xs:NCName"/>
+  <xs:element name="LastName" type="xs:NCName"/>
+  <xs:element name="Email" type="xs:string"/>
+  <xs:element name="Extension" type="xs:integer"/>
+  <xs:element name="HomePhone" type="xs:integer"/>
+  <xs:element name="CellPhone" type="xs:integer"/>
+  <xs:element name="JobTitle" type="xs:NCName"/>
+  <xs:element name="SocialSecurityNumber" type="xs:integer"/>
+  <xs:element name="DriverLicenseNumber" type="xs:NCName"/>
+  <xs:element name="Address">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="AddressLine1"/>
+        <xs:element ref="City"/>
+        <xs:element ref="State"/>
+        <xs:element ref="PostalCode"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddressLine1" type="xs:string"/>
+  <xs:element name="City" type="xs:NCName"/>
+  <xs:element name="State" type="xs:NCName"/>
+  <xs:element name="PostalCode" type="xs:integer"/>
+  <xs:element name="BirthDate" type="xs:NMTOKEN"/>
+  <xs:element name="Datehired" type="xs:NMTOKEN"/>
+  <xs:element name="Salary" type="xs:integer"/>
+  <xs:element name="Notes" type="xs:NCName"/>
+</xs:schema>

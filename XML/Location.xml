@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Locations>
+        <Location_ID>LOC01</Location_ID>
+        <Location_Name>King Dr</Location_Name>  	
+	<Location_Code>567</Location_Code>  			
+        <Loc_Address>
+            <Loc_address_line1>2851 S King Drive</Loc_address_line1>
+            <Loc_City>Chicago</Loc_City>
+            <Loc_State>Illinois</Loc_State>
+            <Loc_ZipCode>60616</Loc_ZipCode>   
+        </Loc_Address>  
+        <Loc_Contact_Information>
+            <Loc_phone_number>3129876543</Loc_phone_number>
+            <Loc_fax_number>3122345678</Loc_fax_number>
+            <Loc_email_address>kingdr@ts.com</Loc_email_address>  
+        </Loc_Contact_Information>
+    </Locations>
+<Locations>
+        <Location_ID>LOC02</Location_ID>
+        <Location_Name>Time Square</Location_Name>
+	<Location_Code>345</Location_Code>  			
+        <Loc_Address>
+            <Loc_address_line1>42th Street</Loc_address_line1>
+            <Loc_City>New York</Loc_City>
+            <Loc_State>New York</Loc_State>
+            <Loc_ZipCode>76548</Loc_ZipCode>   
+        </Loc_Address>  
+        <Loc_Contact_Information>
+            <Loc_phone_number>7329876543</Loc_phone_number>
+            <Loc_fax_number>7322345678</Loc_fax_number>
+            <Loc_email_address>timesquare@ts.com</Loc_email_address>  
+        </Loc_Contact_Information>
+    </Locations>
+<Locations>
+        <Location_ID>LOC03</Location_ID>
+        <Location_Name>Rutgers</Location_Name>  
+	<Location_Code>876</Location_Code>			
+        <Loc_Address>
+            <Loc_address_line1>Rutgers University</Loc_address_line1>
+            <Loc_City>New Brunswick</Loc_City>
+            <Loc_State>New Jersey</Loc_State>
+            <Loc_ZipCode>80765</Loc_ZipCode>   
+        </Loc_Address>  
+        <Loc_Contact_Information>
+            <Loc_phone_number>1234576543</Loc_phone_number>
+            <Loc_fax_number>1234545678</Loc_fax_number>
+            <Loc_email_address>rutgers@ts.com</Loc_email_address>  
+        </Loc_Contact_Information>
+    </Locations>

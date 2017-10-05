@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Transactions>
+        <Transaction_ID>Tran01</Transaction_ID>
+	<Order_ID>ORD001</Order_ID>
+	<Price_ID>PC91</Price_ID>
+        <DateOfTransaction>2017-02-08T04:00:45</DateOfTransaction>  			
+        <Transaction_details>Transportation of goods</Transaction_details>
+        <Transaction_Amount>560</Transaction_Amount>
+	<Make>
+		<Year>2010</Year>
+		<Model>TATA</Model>
+	</Make>
+	<Employee_ID>Emp01</Employee_ID>
+	<Truck_ID>T56</Truck_ID>
+        <Discount>0</Discount>
+        <Quantity>1</Quantity>
+        <UnitPrice>500</UnitPrice>
+        <DriverPrice>60</DriverPrice>
+        <VIN>1HGSJ89UYHD786533</VIN>
+        <SpecialRate>0</SpecialRate>
+	<Surcharge>0</Surcharge>
+    </Transactions>
+<Transactions>
+        <Transaction_ID>Tran02</Transaction_ID>
+	<Order_ID>ORD002</Order_ID>
+	<Price_ID>PC92</Price_ID>
+        <DateOfTransaction>2017-02-10T01:33:00</DateOfTransaction>  			
+        <Transaction_details>Transportation of goods</Transaction_details>
+        <Transaction_Amount>120</Transaction_Amount>
+	<Make>
+		<Year>2008</Year>
+		<Model>Nissan</Model>
+	</Make>
+	<Employee_ID>Emp02</Employee_ID>
+	<Truck_ID>T57</Truck_ID>
+        <Discount>0</Discount>
+        <Quantity>1</Quantity>
+        <UnitPrice>90</UnitPrice>
+        <DriverPrice>30</DriverPrice>
+        <VIN>3ODJ78KSNK928392</VIN>
+        <SpecialRate>0</SpecialRate>
+	<Surcharge>0</Surcharge>
+    </Transactions>
+<Transactions>
+        <Transaction_ID>Tran03</Transaction_ID>
+	<Order_ID>ORD003</Order_ID>
+	<Price_ID>PC93</Price_ID>
+        <DateOfTransaction>2017-09-09T08:36:29</DateOfTransaction>  			
+        <Transaction_details>Transportation of goods</Transaction_details>
+        <Transaction_Amount>300</Transaction_Amount>
+	<Make>
+		<Year>2009</Year>
+		<Model>Bajaj</Model>
+	</Make>
+	<Employee_ID>Emp03</Employee_ID>
+	<Truck_ID>T58</Truck_ID>
+        <Discount>0</Discount>
+        <Quantity>1</Quantity>
+        <UnitPrice>250</UnitPrice>
+        <DriverPrice>50</DriverPrice>
+        <VIN>5ITND90JSNS002299</VIN>
+        <SpecialRate>0</SpectalRate>
+	<Surcharge>0</Surcharge>
+    </Transactions>

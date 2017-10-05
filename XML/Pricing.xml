@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pricing>
+        <Price_ID>PC91</Price_ID>
+        <Price>458</Price>  			
+        <LocationIDFrom>LOC01</LocationIDFrom>
+        <LocationIDTo>LOC03</LocationIDTo>
+	<LocationCodeFrom>567</LocationCodeFrom>
+        <LocationCodeTo>876</LocationCodeTo>
+        <LocationNameFrom>Time Square</LocationNameFrom>
+        <LocationNameTo>Rutgers</LocationNameTo>
+     </Pricing>
+<Pricing>
+        <Price_ID>PC92</Price_ID>
+        <Price>155</Price>  			
+        <LocationIDFrom>LOC03</LocationIDFrom>
+        <LocationIDTo>LOC02</LocationIDTo>
+	<LocationCodeFrom>876</LocationCodeFrom>
+        <LocationCodeTo>345</LocationCodeTo>
+        <LocationNameFrom>Rutgers</LocationNameFrom>
+        <LocationNameTo>King Dr</LocationNameTo>
+     </Pricing>
+<Pricing>
+        <Price_ID>PC93</Price_ID>
+        <Price>750</Price>  			
+        <LocationIDFrom>LOC02</LocationIDFrom>
+        <LocationIDTo>LOC03</LocationIDTo>
+	<LocationCodeFrom>345</LocationCodeFrom>
+        <LocationCodeTo>876</LocationCodeTo>
+        <LocationNameFrom>King Dr</LocationNameFrom>
+        <LocationNameTo>Rutgers</LocationNameTo>
+     </Pricing>

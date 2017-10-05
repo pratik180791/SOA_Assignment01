@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Employees">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Employee"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="EMPID"/>
+        <xs:element ref="FirstName"/>
+        <xs:element ref="LastName"/>
+        <xs:element ref="Email"/>
+        <xs:element ref="Extension"/>
+        <xs:element ref="HomePhone"/>
+        <xs:element ref="CellPhone"/>
+        <xs:element ref="JobTitle"/>
+        <xs:element ref="SocialSecurityNumber"/>
+        <xs:element ref="DriverLicenseNumber"/>
+        <xs:element ref="Address"/>
+        <xs:element ref="City"/>
+        <xs:element ref="State"/>
+        <xs:element ref="PostalCode"/>
+        <xs:element ref="BirthDate"/>
+        <xs:element ref="Datehired"/>
+        <xs:element ref="Salary"/>
+        <xs:element ref="Notes"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EMPID" type="xs:integer"/>
+  <xs:element name="FirstName" type="xs:NCName"/>
+  <xs:element name="LastName" type="xs:NCName"/>
+  <xs:element name="Email">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  </xs:element>
+  <xs:element name="Extension" type="xs:integer"/>
+  <xs:element name="HomePhone" type="xs:NMTOKEN">
+  <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:minLength value="10"/>
+      <xs:maxLength value="10"/>
+    </xs:restriction>  
+  <xs:element name="CellPhone">
+  <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:minLength value="10"/>
+      <xs:maxLength value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+  </xs:element>
+  <xs:element name="JobTitle" type="xs:string"/>
+  <xs:element name="SocialSecurityNumber" type="xs:integer">
+    <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:minLength value="9"/>
+      <xs:maxLength value="9"/>
+    </xs:restriction>
+  </xs:element>
+  <xs:element name="DriverLicenseNumber">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="14"/>
+      <xs:maxLength value="14"/>
+    </xs:restriction>
+	<xs:pattern value="[A-Z][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]"/>
+  </xs:simpleType>
+  <xs:element name="Address" type="xs:string"/>
+  <xs:element name="City" type="xs:string"/>
+  <xs:element name="State" type="xs:string"/>
+  <xs:element name="PostalCode" type="xs:integer">
+   <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:minLength value="6"/>
+      <xs:maxLength value="6"/>
+    </xs:restriction>
+  </xs:simpleType>
+  </xs:element>
+  <xs:element name="BirthDate" type="xs:date"/>
+  <xs:element name="Datehired" type="xs:date"/>
+  <xs:element name="Salary" type="xs:integer"/>
+  <xs:element name="Notes" type="xs:string"/>
+</xs:schema>

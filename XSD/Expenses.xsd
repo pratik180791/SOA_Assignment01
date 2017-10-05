@@ -23,12 +23,12 @@
     </xs:complexType>
   </xs:element>
   <xs:element name="Employee_ID" type="xs:integer"/>
-  <xs:element name="ExpenseType" type="xs:NCName"/>
-  <xs:element name="PurposeofExpense" type="xs:NCName"/>
+  <xs:element name="ExpenseType" type="xs:string"/>
+  <xs:element name="PurposeofExpense" type="xs:string"/>
   <xs:element name="AmountSpent" type="xs:integer"/>
   <xs:element name="Expense_Description" type="xs:string"/>
-  <xs:element name="DatePurchased" type="xs:NMTOKEN"/>
-  <xs:element name="DateSubmitted" type="xs:NMTOKEN"/>
+  <xs:element name="DatePurchased" type="xs:date"/>
+  <xs:element name="DateSubmitted" type="xs:date"/>
   <xs:element name="AdvanceAmount" type="xs:integer"/>
   <xs:element name="PaymentMethod" type="xs:string"/>
 </xs:schema>

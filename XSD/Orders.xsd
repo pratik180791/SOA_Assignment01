@@ -20,11 +20,11 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="Order_ID" type="xs:NCName"/>
-  <xs:element name="Order_Date" type="xs:NMTOKEN"/>
+  <xs:element name="Order_ID" type="xs:string"/>
+  <xs:element name="Order_Date" type="xs:date"/>
   <xs:element name="Customer_ID" type="xs:integer"/>
-  <xs:element name="Employee_ID" type="xs:NCName"/>
-  <xs:element name="Truck_ID" type="xs:NCName"/>
+  <xs:element name="Employee_ID" type="xs:string"/>
+  <xs:element name="Truck_ID" type="xs:string"/>
   <xs:element name="PurchaseOrderNumber" type="xs:integer"/>
   <xs:element name="OrderTotalAmount" type="xs:integer"/>
 </xs:schema>

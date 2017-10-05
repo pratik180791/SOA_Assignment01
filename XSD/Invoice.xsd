@@ -19,10 +19,10 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="Invoice_ID" type="xs:NCName"/>
-  <xs:element name="Invoice_To" type="xs:NCName"/>
-  <xs:element name="Employee_ID" type="xs:NCName"/>
+  <xs:element name="Invoice_ID" type="xs:string"/>
+  <xs:element name="Invoice_To" type="xs:string"/>
+  <xs:element name="Employee_ID" type="xs:string"/>
   <xs:element name="Customer_ID" type="xs:integer"/>
   <xs:element name="Invoice_Amount" type="xs:integer"/>
-  <xs:element name="Order_ID" type="xs:NCName"/>
+  <xs:element name="Order_ID" type="xs:string"/>
 </xs:schema>

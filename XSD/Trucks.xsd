@@ -19,7 +19,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="Truck_ID" type="xs:NCName"/>
+  <xs:element name="Truck_ID" type="xs:string"/>
   <xs:element name="Make">
     <xs:complexType>
       <xs:sequence>
@@ -29,9 +29,9 @@
     </xs:complexType>
   </xs:element>
   <xs:element name="Year" type="xs:integer"/>
-  <xs:element name="Model" type="xs:NCName"/>
-  <xs:element name="LicensePlateNo" type="xs:NCName"/>
-  <xs:element name="Employee_ID" type="xs:NCName"/>
-  <xs:element name="Color" type="xs:NCName"/>
-  <xs:element name="VIN" type="xs:NMTOKEN"/>
+  <xs:element name="Model" type="xs:string"/>
+  <xs:element name="LicensePlateNo" type="xs:string"/>
+  <xs:element name="Employee_ID" type="xs:string"/>
+  <xs:element name="Color" type="xs:string"/>
+  <xs:element name="VIN" type="xs:string"/>
 </xs:schema>

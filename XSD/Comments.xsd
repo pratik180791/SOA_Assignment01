@@ -19,10 +19,10 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="CommentID" type="xs:NCName"/>
-  <xs:element name="Time_of_Comment" type="xs:string"/>
+  <xs:element name="CommentID" type="xs:string"/>
+  <xs:element name="Time_of_Comment" type="xs:dateTime"/>
   <xs:element name="Comment_details" type="xs:string"/>
-  <xs:element name="cimment" type="xs:NCName"/>
+  <xs:element name="cimment" type="xs:string"/>
   <xs:element name="Customer_ID" type="xs:integer"/>
   <xs:element name="Transaction_ID" type="xs:integer"/>
 </xs:schema>

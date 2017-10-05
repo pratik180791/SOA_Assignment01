@@ -21,10 +21,15 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="Price_ID" type="xs:NCName"/>
-  <xs:element name="Price" type="xs:integer"/>
-  <xs:element name="LocationIDFrom" type="xs:NCName"/>
-  <xs:element name="LocationIDTo" type="xs:NCName"/>
+  <xs:element name="Price_ID" type="xs:string"/>
+  <xs:element name="Price">
+  <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LocationIDFrom" type="xs:string"/>
+  <xs:element name="LocationIDTo" type="xs:string"/>
   <xs:element name="LocationCodeFrom" type="xs:integer"/>
   <xs:element name="LocationCodeTo" type="xs:integer"/>
   <xs:element name="LocationNameFrom" type="xs:string"/>

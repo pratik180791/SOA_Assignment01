@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Expenses>
 	<Expense>
-		<Employee_ID>001</Employee_ID>
+		<Employee_ID>Emp01</Employee_ID>
 		<ExpenseType>Purchase</ExpenseType>
 		<PurposeofExpense>Investment</PurposeofExpense>
 		<AmountSpent>100</AmountSpent>
@@ -12,7 +12,7 @@
 		<PaymentMethod>Credit Card</PaymentMethod>
 	</Expense>
 	<Expense>
-		<Employee_ID>002</Employee_ID>
+		<Employee_ID>Emp02</Employee_ID>
 		<ExpenseType>Sales</ExpenseType>
 		<PurposeofExpense>Investment</PurposeofExpense>
 		<AmountSpent>500</AmountSpent>
@@ -23,7 +23,7 @@
 		<PaymentMethod>Cash</PaymentMethod>
 	</Expense>
 	<Expense>		
-		<Employee_ID>001</Employee_ID>
+		<Employee_ID>Emp03</Employee_ID>
 		<ExpenseType>Purchase</ExpenseType>
 		<PurposeofExpense>Investment</PurposeofExpense>
 		<AmountSpent>1000</AmountSpent>

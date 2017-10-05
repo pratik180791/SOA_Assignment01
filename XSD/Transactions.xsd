@@ -29,10 +29,10 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="Transaction_ID" type="xs:NCName"/>
-  <xs:element name="Order_ID" type="xs:NCName"/>
-  <xs:element name="Price_ID" type="xs:NCName"/>
-  <xs:element name="DateOfTransaction" type="xs:NMTOKEN"/>
+  <xs:element name="Transaction_ID" type="xs:string"/>
+  <xs:element name="Order_ID" type="xs:string"/>
+  <xs:element name="Price_ID" type="xs:strimg"/>
+  <xs:element name="DateOfTransaction" type="xs:date"/>
   <xs:element name="Transaction_details" type="xs:string"/>
   <xs:element name="Transaction_Amount" type="xs:integer"/>
   <xs:element name="Make">
@@ -43,15 +43,39 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="Year" type="xs:integer"/>
-  <xs:element name="Model" type="xs:NCName"/>
-  <xs:element name="Employee_ID" type="xs:NCName"/>
-  <xs:element name="Truck_ID" type="xs:NCName"/>
-  <xs:element name="Discount" type="xs:integer"/>
-  <xs:element name="Quantity" type="xs:integer"/>
-  <xs:element name="UnitPrice" type="xs:integer"/>
-  <xs:element name="DriverPrice" type="xs:integer"/>
-  <xs:element name="VIN" type="xs:NMTOKEN"/>
-  <xs:element name="SpecialRate" type="xs:integer"/>
-  <xs:element name="Surcharge" type="xs:integer"/>
+  <xs:element name="Year" type="xs:gYear"/>
+  <xs:element name="Model" type="xs:string"/>
+  <xs:element name="Employee_ID" type="xs:string"/>
+  <xs:element name="Truck_ID" type="xs:string"/>
+  <xs:element name="Discount" type="xs:integer">
+  <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:element>
+  <xs:element name="Quantity" type="xs:integer">
+  <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+    </xs:restriction>
+	</xs:element>
+  <xs:element name="UnitPrice">
+  <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+    </xs:restriction>
+	</xs:element>
+  <xs:element name="DriverPrice">
+  <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+    </xs:restriction>
+	</xs:element>  
+  <xs:element name="VIN" type="xs:string"/>
+  <xs:element name="SpecialRate">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+	</xs:element>
+  <xs:element name="Surcharge" type="xs:integer">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+	</xs:element>
 </xs:schema>

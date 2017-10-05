@@ -19,7 +19,7 @@
     </xs:complexType>
   </xs:element>
   <xs:element name="Customer_ID" type="xs:integer"/>
-  <xs:element name="Customer_Name" type="xs:NCName"/>
+  <xs:element name="Customer_Name" type="xs:string"/>
   <xs:element name="Business_Type" type="xs:string"/>
   <xs:element name="Cust_Billing_Address">
     <xs:complexType>
@@ -34,7 +34,14 @@
   <xs:element name="Cust_address_line1" type="xs:string"/>
   <xs:element name="Cust_City" type="xs:string"/>
   <xs:element name="Cust_State" type="xs:string"/>
-  <xs:element name="Cust_ZipCode" type="xs:integer"/>
+  <xs:element name="Cust_ZipCode">
+   <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:minLength value="9"/>
+      <xs:maxLength value="9"/>
+    </xs:restriction>
+  </xs:simpleType>
+  </xs:element>
   <xs:element name="Cust_Contact_Information">
     <xs:complexType>
       <xs:sequence>
@@ -44,7 +51,16 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="Cust_phone_number" type="xs:integer"/>
-  <xs:element name="Cust_fax_number" type="xs:integer"/>
+  <xs:element name="Cust_phone_number">
+  <xs:restriction base="xs:integer">
+      <xs:minLength value="10"/>
+      <xs:maxLength value="10"/>
+    </xs:restriction>
+  </xs:element>
+  <xs:element name="Cust_fax_number">
+    <xs:restriction base="xs:integer">
+      <xs:minLength value="10"/>
+      <xs:maxLength value="10"/>
+    </xs:restriction>
   <xs:element name="Cust_email_address" type="xs:string"/>
 </xs:schema>

@@ -3,7 +3,7 @@
 <Orders>
         <Order_ID>ORD001</Order_ID>
         <Order_Date>2017-08-07</Order_Date>
-	<Customer_ID>780</Customer_ID>
+	<Customer_ID>Cust001</Customer_ID>
 	<Employee_ID>Emp01</Employee_ID>
 	<Truck_ID>T56</Truck_ID>  			
         <PurchaseOrderNumber>5674</PurchaseOrderNumber>
@@ -12,7 +12,7 @@
 <Orders>
         <Order_ID>ORD002</Order_ID>
         <Order_Date>2017-02-15</Order_Date>
-	<Customer_ID>781</Customer_ID>
+	<Customer_ID>Cust002</Customer_ID>
 	<Employee_ID>Emp02</Employee_ID>
 	<Truck_ID>T57</Truck_ID>  			
         <PurchaseOrderNumber>3579</PurchaseOrderNumber>
@@ -21,10 +21,10 @@
 <Orders>
         <Order_ID>ORD003</Order_ID>
         <Order_Date>2017-02-15</Order_Date>
-	<Customer_ID>782</Customer_ID>
+	<Customer_ID>Cust003</Customer_ID>
 	<Employee_ID>Emp03</Employee_ID>
 	<Truck_ID>T58</Truck_ID>  			
         <PurchaseOrderNumber>8765</PurchaseOrderNumber>
         <OrderTotalAmount>300</OrderTotalAmount>
    </Orders>
-   </order>
+ </order>

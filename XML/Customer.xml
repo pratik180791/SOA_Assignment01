@@ -1,83 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Customer>
-<Customers>
-        <Customer_ID>780</Customer_ID>
-        <Customer_Name>Harvey</Customer_Name>  			
-        <Business_Type>Enterprise</Business_Type>
-        <Cust_Billing_Address>
-            <Cust_address_line1>3300 Wabash Street</Cust_address_line1>
-            <Cust_City>New York</Cust_City>
-            <Cust_State>New York</Cust_State>
-            <Cust_ZipCode>80805</Cust_ZipCode>   
-        </Cust_Billing_Address>  
-        <Cust_Contact_Information>
-            <Cust_phone_number>3123254678</Cust_phone_number>
-            <Cust_fax_number>3211234567</Cust_fax_number>
-            <Cust_email_address>Harvey@gmail.com</Cust_email_address>  
-        </Cust_Contact_Information>
-    </Customers>
-<Customers>
-        <Customer_ID>781</Customer_ID>
-        <Customer_Name>Mike</Customer_Name>  			
-        <Business_Type>Small Scale</Business_Type>
-        <Cust_Billing_Address>
-            <Cust_address_line1>3388 State Street</Cust_address_line1>
-            <Cust_City>Chicago</Cust_City>
-            <Cust_State>Illinois</Cust_State>
-            <Cust_ZipCode>60605</Cust_ZipCode>   
-        </Cust_Billing_Address>  
-        <Cust_Contact_Information>
-            <Cust_phone_number>3123286678</Cust_phone_number>
-            <Cust_fax_number>3218674567</Cust_fax_number>
-            <Cust_email_address>mike@gmail.com</Cust_email_address>  
-        </Cust_Contact_Information>
-    </Customers>
-<Customers>
-        <Customer_ID>782</Customer_ID>
-        <Customer_Name>Robert</Customer_Name>  			
-        <Business_Type>Enterprise</Business_Type>
-        <Cust_Billing_Address>
-            <Cust_address_line1>606 State Street</Cust_address_line1>
-            <Cust_City>New Brunswick</Cust_City>
-            <Cust_State>New Jersey</Cust_State>
-            <Cust_ZipCode>960605</Cust_ZipCode>   
-        </Cust_Billing_Address>  
-        <Cust_Contact_Information>
-            <Cust_phone_number>7823254678</Cust_phone_number>
-            <Cust_fax_number>7654234567</Cust_fax_number>
-            <Cust_email_address>robert@gmail.com</Cust_email_address>  
-        </Cust_Contact_Information>
-    </Customers>
-<Customers>
-        <Customer_ID>783</Customer_ID>
-        <Customer_Name>Daniel</Customer_Name>  			
-        <Business_Type>Small Scale</Business_Type>
-        <Cust_Billing_Address>
-            <Cust_address_line1>3 Washington Street</Cust_address_line1>
-            <Cust_City>Chicago</Cust_City>
-            <Cust_State>Illinois</Cust_State>
-            <Cust_ZipCode>60705</Cust_ZipCode>   
-        </Cust_Billing_Address>  
-        <Cust_Contact_Information>
-            <Cust_phone_number>3126794678</Cust_phone_number>
-            <Cust_fax_number>3563534567</Cust_fax_number>
-            <Cust_email_address>daniel@gmail.com</Cust_email_address>  
-        </Cust_Contact_Information>
-    </Customers>
-<Customers>
-        <Customer_ID>784</Customer_ID>
-        <Customer_Name>Louise</Customer_Name>  			
-        <Business_Type>Large Scale</Business_Type>
-        <Cust_Billing_Address>
-            <Cust_address_line1>354 California Ave</Cust_address_line1>
-            <Cust_City>Boston</Cust_City>
-            <Cust_State>Boston</Cust_State>
-            <Cust_ZipCode>87005</Cust_ZipCode>   
-        </Cust_Billing_Address>  
-        <Cust_Contact_Information>
-            <Cust_phone_number>5632124678</Cust_phone_number>
-            <Cust_fax_number>8646234567</Cust_fax_number>
-            <Cust_email_address>louise@gmail.com</Cust_email_address>  
-        </Cust_Contact_Information>
-    </Customers>
-	</Customer>
+	<Customers>
+		<Customer_ID>Cust001</Customer_ID>
+		<Customer_Name>Harvey</Customer_Name>  			
+		<Business_Type>Enterprise</Business_Type>
+		<Cust_Billing_Address>
+		    <Cust_address_line1>3300 Wabash Street</Cust_address_line1>
+		    <Cust_City>New York</Cust_City>
+		    <Cust_State>New York</Cust_State>
+		    <Cust_ZipCode>80805</Cust_ZipCode>   
+		</Cust_Billing_Address>  
+		<Cust_Contact_Information>
+		    <Cust_phone_number>3123254678</Cust_phone_number>
+		    <Cust_fax_number>3211234567</Cust_fax_number>
+		    <Cust_email_address>Harvey@gmail.com</Cust_email_address>  
+		</Cust_Contact_Information>
+   	 </Customers>
+	
+	<Customers>
+		<Customer_ID>Cust002</Customer_ID>
+		<Customer_Name>Mike</Customer_Name>  			
+		<Business_Type>Small Scale</Business_Type>
+		<Cust_Billing_Address>
+		    <Cust_address_line1>3388 State Street</Cust_address_line1>
+		    <Cust_City>Chicago</Cust_City>
+		    <Cust_State>Illinois</Cust_State>
+		    <Cust_ZipCode>60605</Cust_ZipCode>   
+		</Cust_Billing_Address>  
+		<Cust_Contact_Information>
+		    <Cust_phone_number>3123286678</Cust_phone_number>
+		    <Cust_fax_number>3218674567</Cust_fax_number>
+		    <Cust_email_address>mike@gmail.com</Cust_email_address>  
+		</Cust_Contact_Information>
+	</Customers>
+	
+	<Customers>
+		<Customer_ID>Cust003</Customer_ID>
+		<Customer_Name>Robert</Customer_Name>  			
+		<Business_Type>Enterprise</Business_Type>
+		<Cust_Billing_Address>
+		    <Cust_address_line1>606 State Street</Cust_address_line1>
+		    <Cust_City>New Brunswick</Cust_City>
+		    <Cust_State>New Jersey</Cust_State>
+		    <Cust_ZipCode>960605</Cust_ZipCode>   
+		</Cust_Billing_Address>  
+		<Cust_Contact_Information>
+		    <Cust_phone_number>7823254678</Cust_phone_number>
+		    <Cust_fax_number>7654234567</Cust_fax_number>
+		    <Cust_email_address>robert@gmail.com</Cust_email_address>  
+		</Cust_Contact_Information>
+   	</Customers>
+	
+	<Customers>
+		<Customer_ID>783</Customer_ID>
+		<Customer_Name>Daniel</Customer_Name>  			
+		<Business_Type>Small Scale</Business_Type>
+		<Cust_Billing_Address>
+		    <Cust_address_line1>3 Washington Street</Cust_address_line1>
+		    <Cust_City>Chicago</Cust_City>
+		    <Cust_State>Illinois</Cust_State>
+		    <Cust_ZipCode>60705</Cust_ZipCode>   
+		</Cust_Billing_Address>  
+		<Cust_Contact_Information>
+		    <Cust_phone_number>3126794678</Cust_phone_number>
+		    <Cust_fax_number>3563534567</Cust_fax_number>
+		    <Cust_email_address>daniel@gmail.com</Cust_email_address>  
+		</Cust_Contact_Information>
+	</Customers>
+	
+	<Customers>
+		<Customer_ID>784</Customer_ID>
+		<Customer_Name>Louise</Customer_Name>  			
+		<Business_Type>Large Scale</Business_Type>
+		<Cust_Billing_Address>
+		    <Cust_address_line1>354 California Ave</Cust_address_line1>
+		    <Cust_City>Boston</Cust_City>
+		    <Cust_State>Boston</Cust_State>
+		    <Cust_ZipCode>87005</Cust_ZipCode>   
+		</Cust_Billing_Address>  
+		<Cust_Contact_Information>
+		    <Cust_phone_number>5632124678</Cust_phone_number>
+		    <Cust_fax_number>8646234567</Cust_fax_number>
+		    <Cust_email_address>louise@gmail.com</Cust_email_address>  
+		</Cust_Contact_Information>
+	</Customers>
+</Customer>

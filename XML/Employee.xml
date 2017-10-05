@@ -1,6 +1,69 @@
 <?xml version="1.0" encoding="US-ASCII"?>
 <Employees>
- <Employee><EMPID>Emp01</EMPID> <FirstName>Pratik</FirstName> <LastName>Tamhankar</LastName> <Email>ptamhankar@hawk.iit.edu</Email> <Extension>91000</Extension> <HomePhone>2128189989</HomePhone> <CellPhone>3128438897</CellPhone> <JobTitle>Analyst</JobTitle> <SocialSecurityNumber>121334444</SocialSecurityNumber> <DriverLicenseNumber>S000-0759-1180</DriverLicenseNumber> <Address>2951 S King Drive</Address> <City>Chicago</City> <State>Illinois</State> <PostalCode>60616</PostalCode> <BirthDate>07-18-1991</BirthDate> <Datehired>07-08-2016</Datehired> <Salary>101000</Salary> <Notes>Permanent</Notes> </Employee>
- <Employee><EMPID>Emp02</EMPID> <FirstName>Bhumin</FirstName> <LastName>Shah</LastName> <Email>bshah40@hawk.iit.edu</Email> <Extension>91001</Extension> <HomePhone>4128189989</HomePhone> <CellPhone>3128488888</CellPhone> <JobTitle>PM</JobTitle> <SocialSecurityNumber>131667878</SocialSecurityNumber> <DriverLicenseNumber>S000-0759-1163</DriverLicenseNumber> <Address>2251 S King Drive</Address> <City>Chicago</City> <State>Illinois</State> <PostalCode>60617</PostalCode> <BirthDate>05-19-1991</BirthDate> <Datehired>17-08-2016</Datehired> <Salary>101000</Salary> <Notes>Contract</Notes> </Employee>
- <Employee><EMPID>Emp03</EMPID> <FirstName>Swati</FirstName> <LastName>Khandalekar</LastName> <Email>skhandalekar@hawk.iit.edu</Email> <Extension>91002</Extension> <HomePhone>1228189989</HomePhone> <CellPhone>3124567897</CellPhone> <JobTitle>Designer</JobTitle> <SocialSecurityNumber>171909898</SocialSecurityNumber> <DriverLicenseNumber>S000-0759-1187</DriverLicenseNumber> <Address>2351 S King Drive</Address> <City>Chicago</City> <State>Illinois</State> <PostalCode>60618</PostalCode> <BirthDate>01-05-1991</BirthDate> <Datehired>19-08-2015</Datehired> <Salary>101000</Salary> <Notes>permanent</Notes> </Employee>
+  <Employee>
+    <EMPID>Emp01</EMPID>
+    <FirstName>Pratik</FirstName>
+    <LastName>Tamhankar</LastName>
+    <Email>ptamhankar@hawk.iit.edu</Email>
+    <Extension>91000</Extension>
+    <HomePhone>2128189989</HomePhone>
+    <CellPhone>3128438897</CellPhone>
+    <JobTitle>Analyst</JobTitle>
+    <SocialSecurityNumber>121334444</SocialSecurityNumber>
+    <DriverLicenseNumber>S000-0759-1180</DriverLicenseNumber>
+    <Address>
+      <AddressLine1>2951 S King Drive</AddressLine1>
+      <City>Chicago</City>
+      <State>Illinois</State>
+      <PostalCode>60616</PostalCode>
+    </Address
+    <BirthDate>07-18-1991</BirthDate>
+    <Datehired>07-08-2016</Datehired>
+    <Salary>101000</Salary>
+    <Notes>Permanent</Notes>
+ </Employee>
+ <Employee>
+   <EMPID>Emp02</EMPID>
+   <FirstName>Bhumin</FirstName>
+   <LastName>Shah</LastName>
+   <Email>bshah40@hawk.iit.edu</Email>
+   <Extension>91001</Extension>
+   <HomePhone>4128189989</HomePhone>
+   <CellPhone>3128488888</CellPhone>
+   <JobTitle>PM</JobTitle>
+   <SocialSecurityNumber>131667878</SocialSecurityNumber>
+   <DriverLicenseNumber>S000-0759-1163</DriverLicenseNumber>
+   <Address>
+     <AddressLine1>2251 S King Drive</AddressLine1>
+     <City>Chicago</City>
+     <State>Illinois</State>
+     <PostalCode>60617</PostalCode>
+   </Address
+   <BirthDate>05-19-1991</BirthDate>
+   <Datehired>17-08-2016</Datehired>
+   <Salary>101000</Salary>
+   <Notes>Contract</Notes> 
+ </Employee>
+ <Employee>
+   <EMPID>Emp03</EMPID>
+   <FirstName>Swati</FirstName>
+   <LastName>Khandalekar</LastName>
+   <Email>skhandalekar@hawk.iit.edu</Email>
+   <Extension>91002</Extension>
+   <HomePhone>1228189989</HomePhone>
+   <CellPhone>3124567897</CellPhone>
+   <JobTitle>Designer</JobTitle>
+   <SocialSecurityNumber>171909898</SocialSecurityNumber>
+   <DriverLicenseNumber>S000-0759-1187</DriverLicenseNumber>
+   <Address>
+     <AddressLine1>2351 S King Drive</AddressLine1> 
+     <City>Chicago</City>
+     <State>Illinois</State>
+     <PostalCode>60618</PostalCode>
+   </Address
+    <BirthDate>01-05-1991</BirthDate>
+   <Datehired>19-08-2015</Datehired>
+   <Salary>101000</Salary>
+   <Notes>permanent</Notes>
+ </Employee>
 </Employees>

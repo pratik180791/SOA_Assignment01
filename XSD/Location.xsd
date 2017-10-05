@@ -37,8 +37,7 @@
   <xs:element name="Loc_ZipCode">
     <xs:simpleType>
     <xs:restriction base="xs:integer">
-      <xs:minLength value="6"/>
-      <xs:maxLength value="6"/>
+      <xs:totalDigits value="6"/>
     </xs:restriction>
   </xs:simpleType>
   </xs:element>
@@ -54,16 +53,14 @@
   <xs:element name="Loc_phone_number">
     <xs:simpleType>
     <xs:restriction base="xs:integer">
-      <xs:minLength value="10"/>
-      <xs:maxLength value="10"/>
+      <xs:totalDigits value="10"/>
     </xs:restriction>
   </xs:simpleType>
   </xs:element>
   <xs:element name="Loc_fax_number">
     <xs:simpleType>
     <xs:restriction base="xs:integer">
-      <xs:minLength value="10"/>
-      <xs:maxLength value="10"/>
+     <xs:totalDigits value="10"/>
     </xs:restriction>
   </xs:simpleType>
   </xs:element>

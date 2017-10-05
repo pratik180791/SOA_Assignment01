@@ -32,21 +32,19 @@
     </xs:complexType>
   </xs:element>
   <xs:element name="EMPID" type="xs:integer"/>
-  <xs:element name="FirstName" type="xs:NCName"/>
-  <xs:element name="LastName" type="xs:NCName"/>
-  <xs:element name="Email">
-  <xs:simpleType>
-    <xs:restriction base="xs:string">
-    </xs:restriction>
-  </xs:simpleType>
+  <xs:element name="FirstName" type="xs:string"/>
+  <xs:element name="LastName" type="xs:string"/>
+  <xs:element name="Email" type="xs:string">
   </xs:element>
   <xs:element name="Extension" type="xs:integer"/>
-  <xs:element name="HomePhone" type="xs:NMTOKEN">
+  <xs:element name="HomePhone">
   <xs:simpleType>
     <xs:restriction base="xs:integer">
       <xs:minLength value="10"/>
       <xs:maxLength value="10"/>
     </xs:restriction>  
+	</xs:simpleType>
+  </xs:element>
   <xs:element name="CellPhone">
   <xs:simpleType>
     <xs:restriction base="xs:integer">

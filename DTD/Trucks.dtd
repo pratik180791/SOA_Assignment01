@@ -1,0 +1,41 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT Truck (Trucks)+>
+<!ATTLIST Truck
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Trucks (Truck_ID,Make,LicensePlateNo,Employee_ID,Color,VIN)>
+<!ATTLIST Trucks
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Truck_ID (#PCDATA)>
+<!ATTLIST Truck_ID
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Make (Year,Model)>
+<!ATTLIST Make
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT LicensePlateNo (#PCDATA)>
+<!ATTLIST LicensePlateNo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Employee_ID (#PCDATA)>
+<!ATTLIST Employee_ID
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Color (#PCDATA)>
+<!ATTLIST Color
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT VIN (#PCDATA)>
+<!ATTLIST VIN
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Year (#PCDATA)>
+<!ATTLIST Year
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Model (#PCDATA)>
+<!ATTLIST Model
+  xmlns CDATA #FIXED ''>

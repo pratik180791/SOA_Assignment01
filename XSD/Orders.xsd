@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="order">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Orders"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Order_ID"/>
+        <xs:element ref="Order_Date"/>
+        <xs:element ref="Customer_ID"/>
+        <xs:element ref="Employee_ID"/>
+        <xs:element ref="Truck_ID"/>
+        <xs:element ref="PurchaseOrderNumber"/>
+        <xs:element ref="OrderTotalAmount"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Order_ID" type="xs:NCName"/>
+  <xs:element name="Order_Date" type="xs:NMTOKEN"/>
+  <xs:element name="Customer_ID" type="xs:integer"/>
+  <xs:element name="Employee_ID" type="xs:NCName"/>
+  <xs:element name="Truck_ID" type="xs:NCName"/>
+  <xs:element name="PurchaseOrderNumber" type="xs:integer"/>
+  <xs:element name="OrderTotalAmount" type="xs:integer"/>
+</xs:schema>

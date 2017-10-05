@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice>
+  <Invoices>
+        <Invoice_ID>INV01</Invoice_ID>
+	<Invoice_To>Customer</Invoice_To>
+	<Employee_ID>EMP001</Employee_ID>
+        <Customer_ID>780</Customer_ID>  			
+        <Invoice_Amount>560</Invoice_Amount>
+        <Order_ID>ORD001</Order_ID>
+  </Invoices>
+  <Invoices>
+        <Invoice_ID>INV02</Invoice_ID>
+	<Invoice_To>Customer</Invoice_To>
+	<Employee_ID>EMP002</Employee_ID>
+        <Customer_ID>781</Customer_ID>  			
+        <Invoice_Amount>120</Invoice_Amount>
+        <Order_ID>ORD002</Order_ID>
+  </Invoices>
+  <Invoices>
+        <Invoice_ID>INV03</Invoice_ID>
+	<Invoice_To>Customer</Invoice_To>
+	<Employee_ID>EMP003</Employee_ID>
+        <Customer_ID>782</Customer_ID>  			
+        <Invoice_Amount>300</Invoice_Amount>
+        <Order_ID>ORD003</Order_ID>
+  </Invoices>
+</Invoice>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Truck>
+  <Trucks>
+        <Truck_ID>T56</Truck_ID>
+	<Make>
+		<Year>2010</Year>
+		<Model>TATA</Model>
+	</Make>
+	<LicensePlateNo>CD23V</LicensePlateNo>
+	<Employee_ID>Emp01</Employee_ID>
+        <Color>Red</Color>
+        <VIN>1HGSJ89UYHD786533</VIN>
+    </Trucks>
+     <Trucks>
+        <Truck_ID>T57</Truck_ID>
+	<Make>
+		<Year>2010</Year>
+		<Model>TATA</Model>
+	</Make>
+	<LicensePlateNo>FG7UH</LicensePlateNo>
+	<Employee_ID>Emp02</Employee_ID>
+        <Color>Black</Color>
+        <VIN>3ODJ78KSNK928392</VIN>
+    </Trucks>
+     <Trucks>
+        <Truck_ID>T58</Truck_ID>
+	<Make>
+		<Year>2010</Year>
+		<Model>TATA</Model>
+	</Make>
+	<LicensePlateNo>CGK0UI</LicensePlateNo>
+	<Employee_ID>Emp03</Employee_ID>
+        <Color>White</Color>
+        <VIN>5ITND90JSNS002299</VIN>
+    </Trucks>
+</Truck>

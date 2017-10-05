@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Pricing-Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Pricing"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Pricing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Price_ID"/>
+        <xs:element ref="Price"/>
+        <xs:element ref="LocationIDFrom"/>
+        <xs:element ref="LocationIDTo"/>
+        <xs:element ref="LocationCodeFrom"/>
+        <xs:element ref="LocationCodeTo"/>
+        <xs:element ref="LocationNameFrom"/>
+        <xs:element ref="LocationNameTo"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Price_ID" type="xs:NCName"/>
+  <xs:element name="Price" type="xs:integer"/>
+  <xs:element name="LocationIDFrom" type="xs:NCName"/>
+  <xs:element name="LocationIDTo" type="xs:NCName"/>
+  <xs:element name="LocationCodeFrom" type="xs:integer"/>
+  <xs:element name="LocationCodeTo" type="xs:integer"/>
+  <xs:element name="LocationNameFrom" type="xs:string"/>
+  <xs:element name="LocationNameTo" type="xs:string"/>
+</xs:schema>

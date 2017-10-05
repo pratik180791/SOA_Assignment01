@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<Pricing-Root>
 <Pricing>
         <Price_ID>PC91</Price_ID>
         <Price>458</Price>  			
@@ -29,3 +30,4 @@
         <LocationNameFrom>King Dr</LocationNameFrom>
         <LocationNameTo>Rutgers</LocationNameTo>
      </Pricing>
+</Pricing-Root>

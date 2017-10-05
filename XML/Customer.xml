@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<Customer>
 <Customers>
         <Customer_ID>780</Customer_ID>
         <Customer_Name>Harvey</Customer_Name>  			
@@ -79,3 +80,4 @@
             <Cust_email_address>louise@gmail.com</Cust_email_address>  
         </Cust_Contact_Information>
     </Customers>
+	</Customer>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Payments">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Payment"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Payment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Payment_ID"/>
+        <xs:element ref="Order_ID"/>
+        <xs:element ref="Payment_Method_ID"/>
+        <xs:element ref="Payment_Amount"/>
+        <xs:element ref="Payment_Date"/>
+        <xs:element ref="Card_Details"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Payment_ID" type="xs:NCName"/>
+  <xs:element name="Order_ID" type="xs:NCName"/>
+  <xs:element name="Payment_Method_ID" type="xs:integer"/>
+  <xs:element name="Payment_Amount" type="xs:integer"/>
+  <xs:element name="Payment_Date" type="xs:NMTOKEN"/>
+  <xs:element name="Card_Details">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="CreditCardNumber"/>
+        <xs:element ref="CardholdersName"/>
+        <xs:element ref="CreditCardExpDate"/>
+        <xs:element ref="CreditCardAuthorizationNumber"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreditCardNumber" type="xs:integer"/>
+  <xs:element name="CardholdersName" type="xs:NCName"/>
+  <xs:element name="CreditCardExpDate" type="xs:NMTOKEN"/>
+  <xs:element name="CreditCardAuthorizationNumber" type="xs:integer"/>
+</xs:schema>

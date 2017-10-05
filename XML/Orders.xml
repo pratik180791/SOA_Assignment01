@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<order>
 <Orders>
         <Order_ID>ORD001</Order_ID>
-        <Order_Date>04:00:45 08/2/2017</Order_Date>
+        <Order_Date>2017-08-07</Order_Date>
 	<Customer_ID>780</Customer_ID>
 	<Employee_ID>Emp01</Employee_ID>
 	<Truck_ID>T56</Truck_ID>  			
@@ -10,7 +11,7 @@
    </Orders>
 <Orders>
         <Order_ID>ORD002</Order_ID>
-        <Order_Date>8:33:09 15/2/2017</Order_Date>
+        <Order_Date>2017-02-15</Order_Date>
 	<Customer_ID>781</Customer_ID>
 	<Employee_ID>Emp02</Employee_ID>
 	<Truck_ID>T57</Truck_ID>  			
@@ -19,10 +20,11 @@
    </Orders>
 <Orders>
         <Order_ID>ORD003</Order_ID>
-        <Order_Date>8:33:09 15/2/2017</Order_Date>
+        <Order_Date>2017-02-15</Order_Date>
 	<Customer_ID>782</Customer_ID>
 	<Employee_ID>Emp03</Employee_ID>
 	<Truck_ID>T58</Truck_ID>  			
         <PurchaseOrderNumber>8765</PurchaseOrderNumber>
         <OrderTotalAmount>300</OrderTotalAmount>
    </Orders>
+   </order>

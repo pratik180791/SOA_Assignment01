@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="location">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Locations"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Locations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Location_ID"/>
+        <xs:element ref="Location_Name"/>
+        <xs:element ref="Location_Code"/>
+        <xs:element ref="Loc_Address"/>
+        <xs:element ref="Loc_Contact_Information"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Location_ID" type="xs:NCName"/>
+  <xs:element name="Location_Name" type="xs:string"/>
+  <xs:element name="Location_Code" type="xs:integer"/>
+  <xs:element name="Loc_Address">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Loc_address_line1"/>
+        <xs:element ref="Loc_City"/>
+        <xs:element ref="Loc_State"/>
+        <xs:element ref="Loc_ZipCode"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Loc_address_line1" type="xs:string"/>
+  <xs:element name="Loc_City" type="xs:string"/>
+  <xs:element name="Loc_State" type="xs:string"/>
+  <xs:element name="Loc_ZipCode" type="xs:integer"/>
+  <xs:element name="Loc_Contact_Information">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Loc_phone_number"/>
+        <xs:element ref="Loc_fax_number"/>
+        <xs:element ref="Loc_email_address"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Loc_phone_number" type="xs:integer"/>
+  <xs:element name="Loc_fax_number" type="xs:integer"/>
+  <xs:element name="Loc_email_address" type="xs:string"/>
+</xs:schema>

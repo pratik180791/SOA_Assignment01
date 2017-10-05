@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="transaction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Transactions"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Transactions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Transaction_ID"/>
+        <xs:element ref="Order_ID"/>
+        <xs:element ref="Price_ID"/>
+        <xs:element ref="DateOfTransaction"/>
+        <xs:element ref="Transaction_details"/>
+        <xs:element ref="Transaction_Amount"/>
+        <xs:element ref="Make"/>
+        <xs:element ref="Employee_ID"/>
+        <xs:element ref="Truck_ID"/>
+        <xs:element ref="Discount"/>
+        <xs:element ref="Quantity"/>
+        <xs:element ref="UnitPrice"/>
+        <xs:element ref="DriverPrice"/>
+        <xs:element ref="VIN"/>
+        <xs:element ref="SpecialRate"/>
+        <xs:element ref="Surcharge"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Transaction_ID" type="xs:NCName"/>
+  <xs:element name="Order_ID" type="xs:NCName"/>
+  <xs:element name="Price_ID" type="xs:NCName"/>
+  <xs:element name="DateOfTransaction" type="xs:NMTOKEN"/>
+  <xs:element name="Transaction_details" type="xs:string"/>
+  <xs:element name="Transaction_Amount" type="xs:integer"/>
+  <xs:element name="Make">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Year"/>
+        <xs:element ref="Model"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Year" type="xs:integer"/>
+  <xs:element name="Model" type="xs:NCName"/>
+  <xs:element name="Employee_ID" type="xs:NCName"/>
+  <xs:element name="Truck_ID" type="xs:NCName"/>
+  <xs:element name="Discount" type="xs:integer"/>
+  <xs:element name="Quantity" type="xs:integer"/>
+  <xs:element name="UnitPrice" type="xs:integer"/>
+  <xs:element name="DriverPrice" type="xs:integer"/>
+  <xs:element name="VIN" type="xs:NMTOKEN"/>
+  <xs:element name="SpecialRate" type="xs:integer"/>
+  <xs:element name="Surcharge" type="xs:integer"/>
+</xs:schema>

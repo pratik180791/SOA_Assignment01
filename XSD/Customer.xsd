@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Customer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Customers"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Customer_ID"/>
+        <xs:element ref="Customer_Name"/>
+        <xs:element ref="Business_Type"/>
+        <xs:element ref="Cust_Billing_Address"/>
+        <xs:element ref="Cust_Contact_Information"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customer_ID" type="xs:integer"/>
+  <xs:element name="Customer_Name" type="xs:NCName"/>
+  <xs:element name="Business_Type" type="xs:string"/>
+  <xs:element name="Cust_Billing_Address">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Cust_address_line1"/>
+        <xs:element ref="Cust_City"/>
+        <xs:element ref="Cust_State"/>
+        <xs:element ref="Cust_ZipCode"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Cust_address_line1" type="xs:string"/>
+  <xs:element name="Cust_City" type="xs:string"/>
+  <xs:element name="Cust_State" type="xs:string"/>
+  <xs:element name="Cust_ZipCode" type="xs:integer"/>
+  <xs:element name="Cust_Contact_Information">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Cust_phone_number"/>
+        <xs:element ref="Cust_fax_number"/>
+        <xs:element ref="Cust_email_address"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Cust_phone_number" type="xs:integer"/>
+  <xs:element name="Cust_fax_number" type="xs:integer"/>
+  <xs:element name="Cust_email_address" type="xs:string"/>
+</xs:schema>

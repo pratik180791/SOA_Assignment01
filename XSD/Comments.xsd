@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="comment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Comments"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Comments">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="CommentID"/>
+        <xs:element ref="Time_of_Comment"/>
+        <xs:element ref="Comment_details"/>
+        <xs:element ref="cimment"/>
+        <xs:element ref="Customer_ID"/>
+        <xs:element ref="Transaction_ID"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CommentID" type="xs:NCName"/>
+  <xs:element name="Time_of_Comment" type="xs:string"/>
+  <xs:element name="Comment_details" type="xs:string"/>
+  <xs:element name="cimment" type="xs:NCName"/>
+  <xs:element name="Customer_ID" type="xs:integer"/>
+  <xs:element name="Transaction_ID" type="xs:integer"/>
+</xs:schema>

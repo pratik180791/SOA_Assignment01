@@ -1,0 +1,34 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT Invoice (Invoices)+>
+<!ATTLIST Invoice
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Invoices (Invoice_ID,Invoice_To,Employee_ID,Customer_ID,
+                    Invoice_Amount,Order_ID)>
+<!ATTLIST Invoices
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Invoice_ID (#PCDATA)>
+<!ATTLIST Invoice_ID
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Invoice_To (#PCDATA)>
+<!ATTLIST Invoice_To
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Employee_ID (#PCDATA)>
+<!ATTLIST Employee_ID
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Customer_ID (#PCDATA)>
+<!ATTLIST Customer_ID
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Invoice_Amount (#PCDATA)>
+<!ATTLIST Invoice_Amount
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Order_ID (#PCDATA)>
+<!ATTLIST Order_ID
+  xmlns CDATA #FIXED ''>

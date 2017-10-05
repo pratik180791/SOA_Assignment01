@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<comment>
+<Comments><CommentID>Com1</CommentID><Time_of_Comment>11:36:15 10/04/2017</Time_of_Comment><Comment_details>Nice Work</Comment_details><cimment>cimment1</cimment><Customer_ID>0</Customer_ID><Transaction_ID>1</Transaction_ID></Comments>
 <Comments>
-        <CommentID>Com1</CommentID>
-        <Time_of_Comment>11:36:15 10/04/2017</Time_of_Comment>  			
-        <Comment_details>Nice Work</Comment_details>
-	<cimment>cimment1</cimment>
-	<Customer_ID>0</Customer_ID>
-	<Transaction_ID>1</Transaction_ID>
-      </Comments>
-<Comments>
-        <CommentID>Com2</CommentID>
+   <CommentID>Com2</CommentID>
         <Time_of_Comment>08:45:12 08/02/2017</Time_of_Comment>  			
         <Comment_details>Will surely contact you next time</Comment_details>
 	<cimment>cimment2</cimment>
@@ -23,3 +17,4 @@
 	<Customer_ID>0</Customer_ID>
 	<Transaction_ID>1</Transaction_ID>
       </Comments>
+</comment>

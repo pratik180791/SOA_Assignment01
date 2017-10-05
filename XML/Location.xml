@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<location>
 <Locations>
         <Location_ID>LOC01</Location_ID>
         <Location_Name>King Dr</Location_Name>  	
@@ -47,3 +48,4 @@
             <Loc_email_address>rutgers@ts.com</Loc_email_address>  
         </Loc_Contact_Information>
     </Locations>
+</location>

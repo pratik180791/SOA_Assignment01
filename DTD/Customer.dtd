@@ -1,0 +1,60 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT Customer (Customers)+>
+<!ATTLIST Customer
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Customers (Customer_ID,Customer_Name,Business_Type,
+                     Cust_Billing_Address,Cust_Contact_Information)>
+<!ATTLIST Customers
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Customer_ID (#PCDATA)>
+<!ATTLIST Customer_ID
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Customer_Name (#PCDATA)>
+<!ATTLIST Customer_Name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Business_Type (#PCDATA)>
+<!ATTLIST Business_Type
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Cust_Billing_Address (Cust_address_line1,Cust_City,Cust_State,
+                                Cust_ZipCode)>
+<!ATTLIST Cust_Billing_Address
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Cust_Contact_Information (Cust_phone_number,Cust_fax_number,
+                                    Cust_email_address)>
+<!ATTLIST Cust_Contact_Information
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Cust_address_line1 (#PCDATA)>
+<!ATTLIST Cust_address_line1
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Cust_City (#PCDATA)>
+<!ATTLIST Cust_City
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Cust_State (#PCDATA)>
+<!ATTLIST Cust_State
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Cust_ZipCode (#PCDATA)>
+<!ATTLIST Cust_ZipCode
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Cust_phone_number (#PCDATA)>
+<!ATTLIST Cust_phone_number
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Cust_fax_number (#PCDATA)>
+<!ATTLIST Cust_fax_number
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Cust_email_address (#PCDATA)>
+<!ATTLIST Cust_email_address
+  xmlns CDATA #FIXED ''>

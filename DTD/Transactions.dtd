@@ -1,0 +1,85 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT transaction (Transactions)+>
+<!ATTLIST transaction
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Transactions (Transaction_ID,Order_ID,Price_ID,
+                        DateOfTransaction,Transaction_details,
+                        Transaction_Amount,Make,Employee_ID,Truck_ID,
+                        Discount,Quantity,UnitPrice,DriverPrice,VIN,
+                        SpecialRate,Surcharge)>
+<!ATTLIST Transactions
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Transaction_ID (#PCDATA)>
+<!ATTLIST Transaction_ID
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Order_ID (#PCDATA)>
+<!ATTLIST Order_ID
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Price_ID (#PCDATA)>
+<!ATTLIST Price_ID
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT DateOfTransaction (#PCDATA)>
+<!ATTLIST DateOfTransaction
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Transaction_details (#PCDATA)>
+<!ATTLIST Transaction_details
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Transaction_Amount (#PCDATA)>
+<!ATTLIST Transaction_Amount
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Make (Year,Model)>
+<!ATTLIST Make
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Employee_ID (#PCDATA)>
+<!ATTLIST Employee_ID
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Truck_ID (#PCDATA)>
+<!ATTLIST Truck_ID
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Discount (#PCDATA)>
+<!ATTLIST Discount
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Quantity (#PCDATA)>
+<!ATTLIST Quantity
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT UnitPrice (#PCDATA)>
+<!ATTLIST UnitPrice
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT DriverPrice (#PCDATA)>
+<!ATTLIST DriverPrice
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT VIN (#PCDATA)>
+<!ATTLIST VIN
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT SpecialRate (#PCDATA)>
+<!ATTLIST SpecialRate
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Surcharge (#PCDATA)>
+<!ATTLIST Surcharge
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Year (#PCDATA)>
+<!ATTLIST Year
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Model (#PCDATA)>
+<!ATTLIST Model
+  xmlns CDATA #FIXED ''>

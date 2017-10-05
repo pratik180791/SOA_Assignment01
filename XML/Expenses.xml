@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Expenses>
+	<Expense>
+		<Employee_ID>001</Employee_ID>
+		<ExpenseType>Purchase</ExpenseType>
+		<PurposeofExpense>Investment</PurposeofExpense>
+		<AmountSpent>100</AmountSpent>
+		<Expense_Description>Invested in new truck</Expense_Description>
+		<DatePurchased>2014-05-12</DatePurchased>
+		<DateSubmitted>2016-05-23</DateSubmitted>
+		<AdvanceAmount>10</AdvanceAmount>
+		<PaymentMethod>Credit Card</PaymentMethod>
+	</Expense>
+	<Expense>
+		<Employee_ID>002</Employee_ID>
+		<ExpenseType>Sales</ExpenseType>
+		<PurposeofExpense>Investment</PurposeofExpense>
+		<AmountSpent>500</AmountSpent>
+		<Expense_Description>Truck rented</Expense_Description>
+		<DatePurchased>2017-01-01</DatePurchased>
+		<DateSubmitted>2017-03-01</DateSubmitted>
+		<AdvanceAmount>0</AdvanceAmount>
+		<PaymentMethod>Cash</PaymentMethod>
+	</Expense>
+	<Expense>		
+		<Employee_ID>001</Employee_ID>
+		<ExpenseType>Purchase</ExpenseType>
+		<PurposeofExpense>Investment</PurposeofExpense>
+		<AmountSpent>1000</AmountSpent>
+		<Expense_Description>Rent</Expense_Description>
+		<DatePurchased>2017-04-01</DatePurchased>
+		<DateSubmitted>2017-05-01</DateSubmitted>
+		<AdvanceAmount>0</AdvanceAmount>
+		<PaymentMethod>Credit card</PaymentMethod>
+	</Expense>
+</Expenses>

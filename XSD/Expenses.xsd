@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Expenses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Expense"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Expense">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Employee_ID"/>
+        <xs:element ref="ExpenseType"/>
+        <xs:element ref="PurposeofExpense"/>
+        <xs:element ref="AmountSpent"/>
+        <xs:element ref="Expense_Description"/>
+        <xs:element ref="DatePurchased"/>
+        <xs:element ref="DateSubmitted"/>
+        <xs:element ref="AdvanceAmount"/>
+        <xs:element ref="PaymentMethod"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employee_ID" type="xs:integer"/>
+  <xs:element name="ExpenseType" type="xs:NCName"/>
+  <xs:element name="PurposeofExpense" type="xs:NCName"/>
+  <xs:element name="AmountSpent" type="xs:integer"/>
+  <xs:element name="Expense_Description" type="xs:string"/>
+  <xs:element name="DatePurchased" type="xs:NMTOKEN"/>
+  <xs:element name="DateSubmitted" type="xs:NMTOKEN"/>
+  <xs:element name="AdvanceAmount" type="xs:integer"/>
+  <xs:element name="PaymentMethod" type="xs:string"/>
+</xs:schema>

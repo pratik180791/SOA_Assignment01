@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<transaction>
 <Transactions>
         <Transaction_ID>Tran01</Transaction_ID>
 	<Order_ID>ORD001</Order_ID>
 	<Price_ID>PC91</Price_ID>
-        <DateOfTransaction>2017-02-08T04:00:45</DateOfTransaction>  			
+        <DateOfTransaction>2017-02-08</DateOfTransaction>  			
         <Transaction_details>Transportation of goods</Transaction_details>
         <Transaction_Amount>560</Transaction_Amount>
 	<Make>
@@ -24,7 +25,7 @@
         <Transaction_ID>Tran02</Transaction_ID>
 	<Order_ID>ORD002</Order_ID>
 	<Price_ID>PC92</Price_ID>
-        <DateOfTransaction>2017-02-10T01:33:00</DateOfTransaction>  			
+        <DateOfTransaction>2017-02-10</DateOfTransaction>  			
         <Transaction_details>Transportation of goods</Transaction_details>
         <Transaction_Amount>120</Transaction_Amount>
 	<Make>
@@ -45,7 +46,7 @@
         <Transaction_ID>Tran03</Transaction_ID>
 	<Order_ID>ORD003</Order_ID>
 	<Price_ID>PC93</Price_ID>
-        <DateOfTransaction>2017-09-09T08:36:29</DateOfTransaction>  			
+        <DateOfTransaction>2017-09-09</DateOfTransaction>  			
         <Transaction_details>Transportation of goods</Transaction_details>
         <Transaction_Amount>300</Transaction_Amount>
 	<Make>
@@ -59,6 +60,7 @@
         <UnitPrice>250</UnitPrice>
         <DriverPrice>50</DriverPrice>
         <VIN>5ITND90JSNS002299</VIN>
-        <SpecialRate>0</SpectalRate>
+        <SpecialRate>0</SpecialRate>
 	<Surcharge>0</Surcharge>
     </Transactions>
+	</transaction>

@@ -52,7 +52,7 @@
    	</Customers>
 	
 	<Customers>
-		<Customer_ID>783</Customer_ID>
+		<Customer_ID>Cust004</Customer_ID>
 		<Customer_Name>Daniel</Customer_Name>  			
 		<Business_Type>Small Scale</Business_Type>
 		<Cust_Billing_Address>
@@ -69,7 +69,7 @@
 	</Customers>
 	
 	<Customers>
-		<Customer_ID>784</Customer_ID>
+		<Customer_ID>Cust005</Customer_ID>
 		<Customer_Name>Louise</Customer_Name>  			
 		<Business_Type>Large Scale</Business_Type>
 		<Cust_Billing_Address>

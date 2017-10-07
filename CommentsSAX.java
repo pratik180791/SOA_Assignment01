@@ -166,7 +166,7 @@ public class CommentsSAX extends DefaultHandler {
 
 	        		if (btimeComment) {
 	        			System.out.println("Time of Comment : " + new String(ch, start, length));
-	        			ep.setTime_of_Comment(LocalDate.parse(new String(ch, start, length)));
+	        		//	ep.setTime_of_Comment(LocalDate.parse(new String(ch, start, length)));
 	        			
 	        			btimeComment = false;
 	        		}
